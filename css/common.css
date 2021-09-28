@@ -1,0 +1,140 @@
+@font-face {
+    font-family: font_strong;
+    src: url('../fonts/MYRIADPRO-REGULAR.OTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: font_markpro;
+    src: url('../fonts/MarkProBook.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: font_markpro;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.container-all {
+    width: 94%;
+    margin: 0 auto
+}
+
+.container-item {
+    width: 73%;
+    margin: 0 auto;
+}
+
+.container-testimonial {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container-footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-category {
+    margin: 0 70px
+}
+
+.mg-auto {
+    margin: auto 0;
+}
+
+.wid10 {
+    width: 10%;
+}
+
+.wid20 {
+    width: 20%;
+}
+
+.wid25 {
+    width: 25%;
+}
+
+.wid30 {
+    width: 30%;
+}
+
+.wid40 {
+    width: 40%;
+}
+
+.wid50 {
+    width: 50%;
+}
+
+.wid60 {
+    width: 60%;
+}
+
+.wid70 {
+    width: 70%;
+}
+
+.wid80 {
+    width: 80%;
+}
+
+.wid90 {
+    width: 90%;
+}
+
+.wid100 {
+    width: 100%;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul .active a {
+    color: #92ac28
+}
+
+.dots-item.dots-active .dots-style {
+    background: black
+}
+
+.flex-gr1 {
+    flex-grow: 1;
+}
+
+.menufix {
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: fadeInDown;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

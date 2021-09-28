@@ -1,0 +1,64 @@
+.footer {
+    background-color: #222222;
+}
+
+.main-footer {
+    padding: 75px 0;
+}
+
+.main-footer .description {
+    margin: 10px 0 30px 0;
+}
+
+.footer p {
+    color: #6c6c6c;
+    font-size: 16px;
+}
+
+.main-footer a {
+    color: #6c6c6c;
+    font-size: 16px;
+}
+
+.footer span {
+    color: white;
+    font-size: 14px;
+}
+
+.main-footer .title {
+    margin-bottom: 20px;
+}
+
+.main-footer .item {
+    padding: 0 30px 0 0;
+}
+
+.support .phone {
+    margin: 20px 0
+}
+
+.support img {
+    margin: 10px 0
+}
+
+.footer ul li {
+    display: block;
+    line-height: 1.5
+}
+
+
+/* style extend footer */
+
+.extend-footer {
+    height: 70px;
+    border-top: 1px solid #6c6c6c;
+}
+
+.extend-footer .left {
+    margin: auto
+}
+
+.extend-footer .right {
+    align-items: center;
+    justify-content: right;
+}
