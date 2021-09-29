@@ -2,18 +2,6 @@ const app = {
     handleEvents: function() {
 
         // xu ly fix header menu khi cuon trang
-        window.onscroll = function() { scrHeader() };
-
-        var header = $('#headerDefault');
-        var sticky = header.offset();
-
-        function scrHeader() {
-            if (window.pageYOffset > sticky.top) {
-                header.addClass('menufix');
-            } else {
-                header.removeClass('menufix');
-            }
-        }
         const headerMenuMobile = $('#header-menu-mobile');
         const opacityAll = $('#opacity-all');
         // xu ly icon bars o man hinh mobile

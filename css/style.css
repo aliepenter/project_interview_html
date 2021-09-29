@@ -16,6 +16,7 @@
     }
     
     .banner .item,
+    .banner .banner-img img,
     .banner-content,
     .banner .dots,
     .category .cate-content,
@@ -97,8 +98,7 @@
     }
     
     .banner .item .banner-content {
-        top: 50%;
-        transform: translateY(-50%);
+        top: 20%;
     }
     
     .banner .item .banner-content h4 span,
@@ -153,13 +153,16 @@
     }
     /* style category */
     
-    .container-category {
+    .container-category,
+    .container-extend-category {
         margin: 0 40px
     }
     
+    .banner-img,
     .category,
     .testimonial-content,
     .branch-img,
+    .banner .banner-img img,
     .ig-img {
         height: 100%
     }
@@ -210,6 +213,7 @@
     
     .category .cate-content {
         top: 15px;
+        letter-spacing: -1px;
     }
     
     .category .right {
@@ -239,7 +243,7 @@
     }
     
     .best-selling .title {
-        margin: 75px 0 25px 0;
+        margin: 80px 0 25px 0;
     }
     
     .best-selling .product .product-item {
@@ -248,7 +252,7 @@
     }
     
     .best-selling .product .product-info {
-        margin-top: 30px;
+        margin-top: 25px;
     }
     
     .best-selling .product .product-info span,
@@ -304,9 +308,9 @@
     }
     
     .ads .ads-content .sale {
-        padding: 6px 10px;
+        padding: 5px 10px;
         display: inline-block;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     
     .ads .ads-content .sale:hover {
@@ -330,12 +334,15 @@
     }
     
     .ads .ads-content p {
-        margin-top: 25px;
+        margin-top: 11px;
+        line-height: 1.6;
+        letter-spacing: -1px;
     }
     /* style shop the collections */
     
     .shop-the-collections .title {
-        margin: 75px 0 25px 0;
+        margin: 78px 0 25px 0;
+        letter-spacing: -4px;
     }
     
     .shop-the-collections .stc-item .item {
@@ -348,7 +355,7 @@
     }
     
     .shop-the-collections .stc-item .item .infor {
-        margin: 25px 0 15px 0;
+        margin: 35px 0 6px 0;
     }
     
     .shop-the-collections .stc-item .item button {
@@ -381,7 +388,7 @@
     }
     
     .testimonial-content .img {
-        margin: 40px 0 30px 0 !important;
+        margin: 30px 0 19px 0 !important;
     }
     
     .testimonial-content .text,
@@ -391,7 +398,7 @@
     }
     
     .testimonial-content .text {
-        margin-bottom: 30px
+        margin-bottom: 20px
     }
     
     .testimonial .dots {
@@ -416,7 +423,11 @@
     /* style blog */
     
     .blog .title {
-        margin: 55px 0 25px 0;
+        margin: 60px 0 25px 0;
+    }
+    
+    .blog .title h3 {
+        letter-spacing: -4px;
     }
     
     .blog .blog-item .item {
@@ -542,7 +553,7 @@
         }
         .banner .item .banner-content button {
             font-size: 8px;
-            margin-top: 30px;
+            margin-top: 23px;
             padding: 10px;
             background: black
         }
@@ -571,7 +582,7 @@
         }
         .category .cate-content {
             position: absolute;
-            top: 75px;
+            top: 67px;
         }
         .category .right {
             display: flex;
@@ -597,11 +608,11 @@
         }
         /* style best-selling */
         .best-selling .product .product-item {
-            padding: 15px
+            padding: 9px 15px;
         }
         /* style shop the collections */
         .shop-the-collections .stc-item .item .infor {
-            height: 60px
+            height: 90px
         }
         .shop-the-collections .stc-item .item {
             width: 33.3333334%;
@@ -681,14 +692,15 @@
         /* style banner */
         .banner .item .banner-content h4,
         .banner .item .banner-content h4 span {
-            font-size: 24px;
+            font-size: 22.5px;
         }
         .banner .item .banner-content h2 {
-            font-size: 60px;
+            font-size: 57px;
+            line-height: 1.2
         }
         .banner .item .banner-content button {
             font-size: 18px;
-            padding: 11px 38px;
+            padding: 12px 25px;
             background: black
         }
         .banner .item .banner-content button:hover {
@@ -697,7 +709,7 @@
         /* style best-selling */
         .best-selling .product .product-item {
             width: 25%;
-            padding: 15px
+            padding: 15px 15px 0px 15px;
         }
         /* style ads */
         .ads .ads-content {
@@ -705,6 +717,7 @@
         }
         .ads .ads-content h2 {
             font-size: 80px;
+            letter-spacing: -2px;
         }
         .ads img {
             opacity: 1;
@@ -762,17 +775,30 @@
     }
     
     @media screen and (min-width: 1920px) {
+        .banner .item .banner-content {
+            top: 34%;
+        }
+        .blog .blog-item .item .infor {
+            height: 166px;
+        }
+        .banner {
+            height: 748px;
+        }
+        .best-selling {
+            margin-bottom: 33px;
+        }
         /* style category */
         .category .right .img {
             padding: 0 !important
         }
         .category .cus-text-category h5 {
             font-size: 14px !important;
-            color: #92AC28
+            color: #92AC28;
+            margin: 10px 0
         }
         .category .cus-text-category h2 {
             font-size: 40px;
-            margin: 1.7rem 0
+            margin: 18px 0
         }
         .category .cus-text-category a {
             color: black;
@@ -782,22 +808,26 @@
         }
         .category .img h5 {
             font-size: 14px;
+            margin: 10px 0;
         }
         .category .img h2 {
             font-size: 40px;
-            margin: 1.7rem 0;
+            margin: 18px 0;
         }
         .category .img a {
             font-size: 16px;
         }
         .category .cate-content {
-            top: 75px;
+            top: 67px;
         }
         .category .right .up {
             height: 476px;
         }
         .container-category {
             margin: 0 60px
+        }
+        .container-extend-category {
+            margin: 0 68px
         }
         /* style ads */
         .ads .ads-content {
@@ -808,13 +838,17 @@
         }
         /* style testimonial */
         .container-testimonial {
-            width: 50%;
+            width: 46%;
         }
         /* style testimonial */
         .testimonial-content {
             position: absolute;
-            top: 10%;
+            top: 12%;
             width: 100%;
+            letter-spacing: -1px;
+        }
+        .testimonial .dots {
+            bottom: 86px;
         }
         /* branch */
         .branch-img,
@@ -822,7 +856,24 @@
             height: 100%;
         }
         .branch-img {
-            width: 73%;
+            width: 77%;
+        }
+        .register .register-form input {
+            padding: 18px 0;
+        }
+        .register .register-form .btn-submit button {
+            padding: 18px 32px;
+            margin-left: 20px;
+        }
+        .register .register-item p {
+            line-height: 1.6;
+            margin: 10px 0 0 0;
+        }
+        .register .register-item h1 {
+            margin: 20px 0;
+        }
+        .shop-the-collections .stc-item .item .infor {
+            height: 40px
         }
     }
     

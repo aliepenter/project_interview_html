@@ -22,11 +22,15 @@
 }
 
 .main-footer {
-    padding: 45px 0;
+    padding: 57px 0 66px 0
 }
 
 .main-footer .description {
     margin: 10px 0 30px 0;
+}
+
+.footer p {
+    line-height: 1.6
 }
 
 .footer p,
@@ -49,7 +53,7 @@
 }
 
 .support .phone {
-    margin: 20px 0
+    margin: 10px 0
 }
 
 .support img {
@@ -58,7 +62,8 @@
 
 .footer ul li {
     display: block;
-    line-height: 1.5
+    line-height: 1.5;
+    padding: 0 0 4px 0;
 }
 
 
@@ -127,4 +132,21 @@
 
 /* res 1920px screen */
 
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {
+    .container-footer {
+        width: 73%;
+    }
+    .footer .info,
+    .footer .support {
+        width: 34.4%;
+    }
+    .footer .service {
+        width: 17%
+    }
+    .footer .about {
+        width: 14.2%
+    }
+    .extend-footer {
+        height: 85px;
+    }
+}

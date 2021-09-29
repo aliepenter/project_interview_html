@@ -27,7 +27,8 @@ h6,
 span,
 p,
 li,
-a {
+a,
+button {
     font-family: font_markpro;
 }
 
@@ -36,7 +37,6 @@ a {
 }
 
 .cus-category,
-.container-all,
 .container-item {
     margin: 0 auto;
 }
@@ -51,7 +51,7 @@ a {
 }
 
 .container-all {
-    width: 94%;
+    margin: 0 2.3% 0 3.3%;
 }
 
 .container-item {
