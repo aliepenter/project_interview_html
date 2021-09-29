@@ -19,6 +19,15 @@
     box-sizing: border-box;
 }
 
+.displayNone {
+    display: none
+}
+
+.cus-category {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap
@@ -32,20 +41,6 @@
 .container-item {
     width: 73%;
     margin: 0 auto;
-}
-
-.container-testimonial {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.container-footer {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.container-category {
-    margin: 0 70px
 }
 
 .mg-auto {
@@ -126,6 +121,23 @@ ul .active a {
     width: 100%;
     z-index: 10;
     top: 0;
+}
+
+.menuMobile {
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 @keyframes fadeInDown {

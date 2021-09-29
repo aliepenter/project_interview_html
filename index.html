@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Document</title>
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
     <link href="./css/common.css" rel="stylesheet" type="text/css">
     <link href="./css/header.css" rel="stylesheet" type="text/css">
     <link href="./css/footer.css" rel="stylesheet" type="text/css">
@@ -52,7 +53,11 @@
             </div>
         </div>
         <div class="header-menu" id="headerDefault">
-            <div class="container-all flex">
+            <div class="header-menu-item container-all flex">
+                <div class="bars" id="bars">
+                    <span><i class="fas fa-bars"></i>
+                    </span>
+                </div>
                 <div class="logo mg-auto">
                     <img src="images/logo.png" alt="">
                 </div>
@@ -67,16 +72,18 @@
                     </ul>
                 </div>
                 <div class="action flex mg-auto">
-                    <a href="#" class="login flex-gr1 mg-auto">
-                        <img src="images/icon/login.png" alt="">
-                        <span>Login</span>
-                    </a>
-                    <a href="#" class="search flex-gr1 mg-auto">
-                        <img src="images/icon/search.png" alt="">
-                    </a>
-                    <a href="#" class="likelist flex-gr1 mg-auto">
-                        <img src="images/icon/likelist.png" alt="">
-                    </a>
+                    <div class="other-action flex">
+                        <a href="#" class="login flex-gr1 mg-auto">
+                            <img src="images/icon/login.png" alt="">
+                            <span>Login</span>
+                        </a>
+                        <a href="#" class="search flex-gr1 mg-auto">
+                            <img src="images/icon/search.png" alt="">
+                        </a>
+                        <a href="#" class="likelist flex-gr1 mg-auto">
+                            <img src="images/icon/likelist.png" alt="">
+                        </a>
+                    </div>
                     <div class="cart flex-gr1">
                         <div class="flex">
                             <div class="wid70 mg-auto">
@@ -84,7 +91,7 @@
                                     <img src="images/icon/cart.png" alt="">
                                 </a>
                             </div>
-                            <div class="count-product-cart wid30 mg-auto">
+                            <div class="count-product-cart mg-auto">
                                 <a href="#">
                                     <span>0</span>
                                 </a>
@@ -94,78 +101,122 @@
                 </div>
             </div>
         </div>
+        <div class="opacity-all displayNone" id="opacity-all">
+
+        </div>
+        <div class="header-menu-mobile displayNone" id="header-menu-mobile">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="" style="width: auto; height: auto">
+            </div>
+            <div class="close-btn" id="close">
+                <span><i class="fas fa-times"></i></span>
+            </div>
+            <div class="menu-mobile">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Shop</a>
+                    </li>
+                    <li>
+                        <a href="">Pages</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">New In</a>
+                    </li>
+                    <li class="active">
+                        <a href="">Sale!</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="action-mobile flex mg-auto">
+                <a href="#" class="login flex-gr1 mg-auto">
+                    <img src="images/icon/login.png" alt="">
+                    <span>Login</span>
+                </a>
+                <a href="#" class="search flex-gr1 mg-auto">
+                    <img src="images/icon/search.png" alt="">
+                </a>
+                <a href="#" class="likelist flex-gr1 mg-auto">
+                    <img src="images/icon/likelist.png" alt="">
+                </a>
+            </div>
+        </div>
     </div>
     <!-- main -->
 
     <div class="main">
         <!-- banner -->
         <div class="banner">
-            <div class="slide">
-                <div class="item" style="z-index: 3;">
-                    <div class="banner-img">
-                        <img src="images/banner/banner1.jpg" alt="">
-                        <div class="banner-content">
-                            <div class="container-item">
-                                <h4>Quick Parcel Delivery,
-                                    <span>From $25</span>
-                                </h4>
-                                <h2>Hanging Plants <br>Up To 45% Discount!</h2>
-                                <button>Explore Now</button>
-                            </div>
+            <div class="item">
+                <div class="banner-img">
+                    <img src="images/banner/banner1.jpg" alt="" style=" width: 100%">
+                    <div class="banner-content">
+                        <div class="container-item">
+                            <h4>Quick Parcel Delivery,
+                                <span>From $25</span>
+                            </h4>
+                            <h2>Hanging Plants <br>Up To 45% Discount!</h2>
+                            <button>Explore Now</button>
                         </div>
                     </div>
                 </div>
-                <div class="item" style="z-index: 2;">
-                    <div class="banner-img">
-                        <img src="images/banner/banner2.jpg" alt="">
-                        <div class="banner-content">
-                            <div class="container-item">
-                                <h4>Quick Parcel Delivery,
-                                    <span>From $25</span>
-                                </h4>
-                                <h2>Houseplant<br>The Perfect Choice!</h2>
-                                <button>Explore Now</button>
-                            </div>
+            </div>
+            <div class="item displayNone">
+                <div class="banner-img">
+                    <img src="images/banner/banner2.jpg" alt="" style=" width: 100%">
+                    <div class="banner-content">
+                        <div class="container-item">
+                            <h4>Quick Parcel Delivery,
+                                <span>From $25</span>
+                            </h4>
+                            <h2>Houseplant<br>The Perfect Choice!</h2>
+                            <button>Explore Now</button>
                         </div>
                     </div>
                 </div>
-                <div class="item" style="z-index: 1;">
-                    <div class="banner-img">
-                        <img src="images/banner/banner3.jpg" alt="">
-                        <div class="banner-content">
-                            <div class="container-item">
-                                <h4>Quick Parcel Delivery,
-                                    <span>From $25</span>
-                                </h4>
-                                <h2>Sale In Lookbook <br>Make You Happy</h2>
-                                <button>Explore Now</button>
-                            </div>
+            </div>
+            <div class="item displayNone">
+                <div class="banner-img">
+                    <img src="images/banner/banner3.jpg" alt="" style=" width: 100%">
+                    <div class="banner-content">
+                        <div class="container-item">
+                            <h4>Quick Parcel Delivery,
+                                <span>From $25</span>
+                            </h4>
+                            <h2>Sale In Lookbook <br>Make You Happy</h2>
+                            <button>Explore Now</button>
                         </div>
                     </div>
                 </div>
-                <div class="dots flex">
-                    <div class="dots-item dots-active">
-                        <div class="dots-style">
+            </div>
+            <div class="dots flex">
+                <div class="dots-item dots-active">
+                    <div class="dots-style">
 
-                        </div>
                     </div>
-                    <div class="dots-item">
-                        <div class="dots-style">
+                </div>
+                <div class="dots-item">
+                    <div class="dots-style">
 
-                        </div>
                     </div>
-                    <div class="dots-item">
-                        <div class="dots-style">
+                </div>
+                <div class="dots-item">
+                    <div class="dots-style">
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- category -->
         <div class="category">
-            <div class="flex">
-                <div class="left wid50 cus-text-category">
+            <div class="cus-category flex">
+                <div class="left cus-text-category">
                     <img src="images/category/cate-img1.jpg" alt="" style=" width: 100%">
                     <div class="cate-content">
                         <div class="container-category">
@@ -177,9 +228,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="right wid50 flex">
-                    <div class="up wid100 flex">
-                        <div class="img wid50 imgLeft">
+                <div class="img imgLeft imgMobile">
+                    <img src="images/category/cate-img2.jpg" alt="" style=" width: 100%">
+                    <div class="cate-content">
+                        <div class="container-category">
+                            <h5>TOP TRENDING</h5>
+                            <h2>Succulent Metal Upto 30%</h2>
+                            <div class="button-shop-now">
+                                <a href="">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img imgRight imgMobile">
+                    <img src="images/category/cate-img3.jpg" alt="" style=" width: 100%">
+                    <div class="cate-content">
+                        <div class="container-category">
+                            <h5>SPRING 2021</h5>
+                            <h2>Top Wall Planters</h2>
+                            <div class="button-shop-now">
+                                <a href="">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgDownMobile imgMobile cus-text-category">
+                    <img src="images/category/cate-img4.jpg" alt="" style=" width: 100%">
+                    <div class="cate-content">
+                        <div class="container-category">
+                            <h5>MID_SEASON</h5>
+                            <h2>The Elliot Modular <br> Planters
+                            </h2>
+                            <div class="button-shop-now">
+                                <a href="">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right flex">
+                    <div class="up flex">
+                        <div class="img imgLeft">
                             <img src="images/category/cate-img2.jpg" alt="" style=" width: 100%">
                             <div class="cate-content">
                                 <div class="container-category">
@@ -191,7 +279,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="img wid50 imgRight">
+                        <div class="img imgRight">
                             <img src="images/category/cate-img3.jpg" alt="" style=" width: 100%">
                             <div class="cate-content">
                                 <div class="container-category">
@@ -204,9 +292,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="down wid100 cus-text-category">
+                    <div class="down cus-text-category">
                         <div class="img">
-                            <img src="images/category/cate-img4.jpg" alt="" style=" width: 100%">
+                            <img src="images/category/cate-img4.jpg" alt="" style=" width: 100%; height: 100%">
                             <div class="cate-content">
                                 <div class="container-category">
                                     <h5>MID_SEASON</h5>
@@ -328,207 +416,211 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- ads -->
-    <div class="ads">
-        <img src="images/ads3/ads-img1.jpg" alt="" style=" width: 100%">
-        <div class="ads-content">
-            <div class="sale">
-                <h5>UP TO 50% OFF</h5>
-            </div>
-            <h2>Bring Nature In Your Home</h2>
-            <p>Holiday shopping with 3% back rewards. <br> Offer expires 12/31/2021</p>
-        </div>
-    </div>
-    <!-- shop the collections -->
-    <div class="shop-the-collections">
-        <div class="title">
-            <h3>Shop The Collections</h3>
-        </div>
-        <div class="stc-item">
-            <div class="container-item flex">
-                <div class="item">
-                    <div class="img">
-                        <img src="images/shop-collection/sc-img1.jpg" alt="" style=" width: 100%">
-                    </div>
-                    <div class="infor">
-                        <span>Plants & Accessories</span>
-                    </div>
-                    <div class="button-stc">
-                        <button>Explore Now</button>
-                    </div>
+        <!-- ads -->
+        <div class="ads">
+            <img src="images/ads3/ads-img1.jpg" alt="">
+            <div class="ads-content">
+                <div class="sale">
+                    <h5>UP TO 50% OFF</h5>
                 </div>
-                <div class="item">
-                    <div class="img">
-                        <img src="images/shop-collection/sc-img2.jpg" alt="" style=" width: 100%">
-                    </div>
-                    <div class="infor">
-                        <span>Make You Happy</span>
-                    </div>
-                    <div class="button-stc">
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src="images/shop-collection/sc-img3.jpg" alt="" style=" width: 100%">
-                    </div>
-                    <div class="infor">
-                        <span>Sale In Lookbook</span>
-                    </div>
-                    <div class="button-stc">
-                        <button>Explore Now</button>
-                    </div>
-                </div>
+                <h2>Bring Nature In Your Home</h2>
+                <p>Holiday shopping with 3% back rewards. <br> Offer expires 12/31/2021</p>
             </div>
         </div>
-    </div>
-    <!-- testimonial -->
-    <div class="testimonial">
-        <img src="images/customer-img/bg.jpg" alt="" style=" width: 100%">
-        <div class="testimonial-content">
-            <div class="container-testimonial">
-                <div class="title">
-                    <span>What Client Says</span>
+        <!-- shop the collections -->
+        <div class="shop-the-collections">
+            <div class="title">
+                <h3>Shop The Collections</h3>
+            </div>
+            <div class="stc-item">
+                <div class="container-item flex">
+                    <div class="item">
+                        <div class="img">
+                            <img src="images/shop-collection/sc-img1.jpg" alt="" style=" width: 100%">
+                        </div>
+                        <div class="infor">
+                            <span>Plants & Accessories</span>
+                        </div>
+                        <div class="button-stc">
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="images/shop-collection/sc-img2.jpg" alt="" style=" width: 100%">
+                        </div>
+                        <div class="infor">
+                            <span>Make You Happy</span>
+                        </div>
+                        <div class="button-stc">
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="images/shop-collection/sc-img3.jpg" alt="" style=" width: 100%">
+                        </div>
+                        <div class="infor">
+                            <span>Sale In Lookbook</span>
+                        </div>
+                        <div class="button-stc">
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="img">
-                    <img src="images/customer-img/cus-img1.png" alt="" style="max-width: 9rem;">
-                </div>
-                <div class="text">
-                    <span>
+            </div>
+        </div>
+        <!-- testimonial -->
+        <div class="testimonial">
+            <img src="images/customer-img/bg.jpg" alt="" class="bg">
+            <div class="testimonial-content">
+                <div class="container-testimonial">
+                    <div class="title">
+                        <span>What Client Says</span>
+                    </div>
+                    <div class="img">
+                        <img src="images/customer-img/cus-img1.png" alt="" style="max-width: 9rem;">
+                    </div>
+                    <div class="text">
+                        <span>
                         We've recently updated our entire product portfolio to give customers and partners the best products with the newest technology. 
                         Come see our expanded award-winning product line.
                     </span>
-                </div>
-                <div class="position">
-                    <p>Jason K.Manato / <span>Ceo & Co</span></p>
+                    </div>
+                    <div class="position">
+                        <p>Jason K.Manato / <span>Ceo & Co</span></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="dots flex">
-            <div class="dots-item dots-active">
-                <div class="dots-style">
+            <div class="dots flex">
+                <div class="dots-item dots-active">
+                    <div class="dots-style">
 
+                    </div>
                 </div>
-            </div>
-            <div class="dots-item">
-                <div class="dots-style">
+                <div class="dots-item">
+                    <div class="dots-style">
 
+                    </div>
                 </div>
-            </div>
-            <div class="dots-item">
-                <div class="dots-style">
+                <div class="dots-item">
+                    <div class="dots-style">
 
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- lastest blog posts -->
+        <div class="blog">
+            <div class="title">
+                <h3>Lastest Blog Posts</h3>
+            </div>
+            <div class="blog-item">
+                <div class="container-item flex">
+                    <div class="item">
+                        <div class="img">
+                            <img src="images/blog/blog-img1.jpg" alt="" style=" width: 100%">
+                        </div>
+                        <div class="infor">
+                            <span class="blog-title">FASHION</span>
+                            <p>Post by <span>Jason K. Manato</span> July 3, 2021</p>
+                            <h5>3 Ways of Lying to Yourself About Your New Relationship.</h5>
+                        </div>
+                        <a href="">Read More</a>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="images/blog/blog-img2.jpg" alt="" style=" width: 100%">
+                        </div>
+                        <div class="infor">
+                            <span class="blog-title">LIFE STYLE</span>
+                            <p>Post by <span>Jason K. Manato</span> July 3, 2021</p>
+                            <h5>The Ultimate Guide to Make Your WordPress Journal.</h5>
+                        </div>
+                        <a href="">Read More</a>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="images/blog/blog-img3.jpg" alt="" style=" width: 100%">
+                        </div>
+                        <div class="infor">
+                            <span class="blog-title">MODERN</span>
+                            <p>Post by <span>Jason K. Manato</span> July 3, 2021</p>
+                            <h5>Outdoor Work: a Designer’s Checklist for Every UX Project.</h5>
+                        </div>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- branch -->
+        <div class="branch">
+            <div class="container-item flex branch-img">
+                <div class="img mg-auto">
+                    <img src="images/branch/br-img1.png" alt="" style="width: auto; height: auto">
+                </div>
+                <div class="img mg-auto">
+                    <img src="images/branch/br-img2.png" alt="" style="width: auto; height: auto">
+                </div>
+                <div class="img mg-auto">
+                    <img src="images/branch/br-img3.png" alt="" style="width: auto; height: auto">
+                </div>
+                <div class="img mg-auto">
+                    <img src="images/branch/br-img4.png" alt="" style="width: auto; height: auto">
+                </div>
+                <div class="img mg-auto">
+                    <img src="images/branch/br-img5.png" alt="" style="width: auto; height: auto">
+                </div>
+                <div class="img mg-auto">
+                    <img src="images/branch/br-img6.png" alt="" style="width: auto; height: auto">
+                </div>
+            </div>
+        </div>
+        <!-- ig-img -->
+        <div class="ig-img">
+            <div class="flex">
+                <div class="img">
+                    <img src="images/branch/img1.jpg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="img">
+                    <img src="images/branch/img2.jpg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="img">
+                    <img src="images/branch/img3.jpg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="img">
+                    <img src="images/branch/img4.jpg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="img">
+                    <img src="images/branch/img5.jpg" alt="" style="width: 100%; height: 100%">
+                </div>
+            </div>
+
+        </div>
+        <!-- register -->
+        <div class="register">
+            <div class="register-item">
+                <h1>Let's Stay in Touch</h1>
+                <p>Subscirbe to the Ohey mailing list to receive updates on new <br/> arrivals, special offers and others and discount information</p>
+                <div class="register-form flex">
+                    <div class="input">
+                        <input type="text" placeholder="Email address">
+                    </div>
+                    <div class="btn-submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+                <p class="child">Plus 20% off your next order.</p>
+            </div>
+        </div>
+        <!-- footer -->
     </div>
-    <!-- lastest blog posts -->
-    <div class="blog">
-        <div class="title">
-            <h3>Lastest Blog Posts</h3>
-        </div>
-        <div class="blog-item">
-            <div class="container-item flex">
-                <div class="item">
-                    <div class="img">
-                        <img src="images/blog/blog-img1.jpg" alt="" style=" width: 100%">
-                    </div>
-                    <div class="infor">
-                        <span class="blog-title">FASHION</span>
-                        <p>Post by <span>Jason K. Manato</span> July 3, 2021</p>
-                        <h5>3 Ways of Lying to Yourself About Your New Relationship.</h5>
-                    </div>
-                    <a href="">Read More</a>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src="images/blog/blog-img2.jpg" alt="" style=" width: 100%">
-                    </div>
-                    <div class="infor">
-                        <span class="blog-title">LIFE STYLE</span>
-                        <p>Post by <span>Jason K. Manato</span> July 3, 2021</p>
-                        <h5>The Ultimate Guide to Make Your WordPress Journal.</h5>
-                    </div>
-                    <a href="">Read More</a>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src="images/blog/blog-img3.jpg" alt="" style=" width: 100%">
-                    </div>
-                    <div class="infor">
-                        <span class="blog-title">MODERN</span>
-                        <p>Post by <span>Jason K. Manato</span> July 3, 2021</p>
-                        <h5>Outdoor Work: a Designer’s Checklist for Every UX Project.</h5>
-                    </div>
-                    <a href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- branch -->
-    <div class="branch">
-        <div class="container-item flex branch-img">
-            <div class="img mg-auto">
-                <img src="images/branch/br-img1.png" alt="" style="width: auto; height: auto">
-            </div>
-            <div class="img mg-auto">
-                <img src="images/branch/br-img2.png" alt="" style="width: auto; height: auto">
-            </div>
-            <div class="img mg-auto">
-                <img src="images/branch/br-img3.png" alt="" style="width: auto; height: auto">
-            </div>
-            <div class="img mg-auto">
-                <img src="images/branch/br-img4.png" alt="" style="width: auto; height: auto">
-            </div>
-            <div class="img mg-auto">
-                <img src="images/branch/br-img5.png" alt="" style="width: auto; height: auto">
-            </div>
-            <div class="img mg-auto">
-                <img src="images/branch/br-img6.png" alt="" style="width: auto; height: auto">
-            </div>
-        </div>
-    </div>
-    <!-- ig-img -->
-    <div class="ig-img flex">
-        <div class="img">
-            <img src="images/branch/img1.jpg" alt="" style="width: 100%; height: auto">
-        </div>
-        <div class="img">
-            <img src="images/branch/img2.jpg" alt="" style="width: 100%; height: auto">
-        </div>
-        <div class="img">
-            <img src="images/branch/img3.jpg" alt="" style="width: 100%; height: auto">
-        </div>
-        <div class="img">
-            <img src="images/branch/img4.jpg" alt="" style="width: 100%; height: auto">
-        </div>
-        <div class="img">
-            <img src="images/branch/img5.jpg" alt="" style="width: 100%; height: auto">
-        </div>
-    </div>
-    <!-- register -->
-    <div class="register">
-        <div class="register-item">
-            <h1>Let's Stay in Touch</h1>
-            <p>Subscirbe to the Ohey mailing list to receive updates on new <br/> arrivals, special offers and others and discount information</p>
-            <div class="register-form flex">
-                <div class="input">
-                    <input type="text" placeholder="Email address">
-                </div>
-                <div class="btn-submit">
-                    <button type="submit">Submit</button>
-                </div>
-            </div>
-            <p class="child">Plus 20% off your next order.</p>
-        </div>
-    </div>
+
     <!-- footer -->
-
     <div class="footer">
         <div class="container-footer">
             <div class="main-footer flex">
-                <div class="info wid30 item">
+                <div class="info item">
                     <div class="imgLogo">
                         <img src="images/icon/logo.png" alt="" style="width: auto; height: auto">
                     </div>
@@ -558,7 +650,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="support wid30 item">
+                <div class="support item">
                     <div class="title">
                         <span>HERE TO HELP</span>
 
@@ -577,7 +669,7 @@
                         <p>support@ohey.com</p>
                     </div>
                 </div>
-                <div class="service wid20 item">
+                <div class="service item">
                     <div class="title">
                         <span>CUSTOMER SERVICE</span>
                     </div>
@@ -597,7 +689,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="about wid20 item">
+                <div class="about item">
                     <div class="title">
                         <span>ABOUT OHEY</span>
                     </div>
@@ -623,8 +715,13 @@
                     <p>&copy Copyright Ohey Limited. All rights reserved.</p>
                 </div>
                 <div class="right flex-gr1 flex">
-                    <span>SECURE PAYMENT</span>
-                    <img src="images/icon/payment.png" alt="">
+                    <div class="span">
+                        <span>SECURE PAYMENT</span>
+                    </div>
+                    <div class="img">
+                        <img src="images/icon/payment.png" alt="" style="width: 100%; height: auto">
+
+                    </div>
                 </div>
             </div>
         </div>
