@@ -4,34 +4,98 @@ const app = {
         // xu ly fix header menu khi cuon trang
         window.onscroll = function() { scrHeader() };
 
-        var header = document.getElementById("headerDefault");
-        var sticky = header.offsetTop;
+        var header = $('#headerDefault');
+        var sticky = header.offset();
 
         function scrHeader() {
-            if (window.pageYOffset > sticky) {
-                document.getElementById('headerDefault').classList.add('menufix');
+            if (window.pageYOffset > sticky.top) {
+                header.addClass('menufix');
             } else {
-                document.getElementById("headerDefault").classList.remove('menufix');
+                header.removeClass('menufix');
             }
         }
+        const headerMenuMobile = $('#header-menu-mobile');
+        const opacityAll = $('#opacity-all');
         // xu ly icon bars o man hinh mobile
-        document.querySelector("#bars").onclick = function() {
-            document.getElementById('header-menu-mobile').classList.add('menuMobile');
-            document.getElementById('header-menu-mobile').classList.remove('displayNone');
-            document.getElementById('opacity-all').classList.remove('displayNone');
-        };
+        $('#bars').click(function() {
+            headerMenuMobile.addClass('menuMobile');
+            headerMenuMobile.removeClass('displayNone');
+            opacityAll.removeClass('displayNone');
+        });
         // xu ly icon close o man hinh mobile
-        document.querySelector("#close").onclick = function() {
-            document.getElementById('header-menu-mobile').classList.remove('menuMobile');
-            document.getElementById('header-menu-mobile').classList.add('displayNone');
-            document.getElementById('opacity-all').classList.add('displayNone');
-        };
+        $('#close').click(function() {
+            headerMenuMobile.removeClass('menuMobile');
+            headerMenuMobile.addClass('displayNone');
+            opacityAll.addClass('displayNone');
+        });
         // xu ly click khoang den o man hinh mobile
-        document.querySelector("#opacity-all").onclick = function() {
-            document.getElementById('header-menu-mobile').classList.remove('menuMobile');
-            document.getElementById('header-menu-mobile').classList.add('displayNone');
-            document.getElementById('opacity-all').classList.add('displayNone');
-        };
+        $('#opacity-all').click(function() {
+            headerMenuMobile.removeClass('menuMobile');
+            headerMenuMobile.addClass('displayNone');
+            opacityAll.addClass('displayNone');
+        });
+        // slick
+        $('.banner').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            cssEase: 'linear',
+            pauseOnHover: false,
+            prevArrow: false,
+            nextArrow: false
+        });
+        $('.branch-img').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: false,
+            nextArrow: false,
+            responsive: [{
+                    breakpoint: 3000,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1920,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }, {
+                    breakpoint: 200,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
     },
     start: function() {
         this.handleEvents();

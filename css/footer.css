@@ -7,23 +7,17 @@
     background-color: #222222;
 }
 
-.footer .info {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.footer .support {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.footer .service {
-    width: 100%;
-    margin-top: 20px;
-}
-
+.footer .info,
+.footer .support,
+.footer .service,
 .footer .about {
     width: 100%;
+}
+
+.footer .info,
+.footer .service,
+.footer .support,
+.footer .about {
     margin-top: 20px;
 }
 
@@ -35,11 +29,7 @@
     margin: 10px 0 30px 0;
 }
 
-.footer p {
-    color: #6c6c6c;
-    font-size: 16px;
-}
-
+.footer p,
 .main-footer a {
     color: #6c6c6c;
     font-size: 16px;
@@ -93,16 +83,10 @@
 /* res 788px screen */
 
 @media screen and (min-width: 768px) {
-    .footer .info {
-        width: 50%;
-    }
-    .footer .support {
-        width: 50%;
-    }
+    .footer .info,
+    .footer .about,
+    .footer .support,
     .footer .service {
-        width: 50%;
-    }
-    .footer .about {
         width: 50%;
     }
     /* style extend footer */
@@ -122,21 +106,16 @@
 /* res 1024px screen */
 
 @media screen and (min-width: 1024px) {
-    .footer .info {
-        width: 30%;
-    }
+    .footer .info,
     .footer .support {
         width: 30%;
     }
-    .footer .service {
-        width: 20%;
-    }
+    .footer .service,
     .footer .about {
         width: 20%;
     }
     .container-footer {
         width: 90%;
-        margin: 0 auto;
     }
 }
 

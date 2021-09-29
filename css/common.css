@@ -13,19 +13,36 @@
 }
 
 * {
-    font-family: font_markpro;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+li,
+a {
+    font-family: font_markpro;
 }
 
 .displayNone {
     display: none
 }
 
+.cus-category,
+.container-all,
+.container-item {
+    margin: 0 auto;
+}
+
 .cus-category {
     max-width: 1920px;
-    margin: 0 auto;
 }
 
 .flex {
@@ -35,12 +52,10 @@
 
 .container-all {
     width: 94%;
-    margin: 0 auto
 }
 
 .container-item {
     width: 73%;
-    margin: 0 auto;
 }
 
 .mg-auto {
@@ -87,7 +102,9 @@
     width: 90%;
 }
 
-.wid100 {
+.wid100,
+.menufix,
+.opacity-all {
     width: 100%;
 }
 
@@ -113,31 +130,29 @@ ul .active a {
 }
 
 .menufix {
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-name: fadeInDown;
     position: fixed;
     background-color: white;
-    width: 100%;
     z-index: 10;
     top: 0;
 }
 
-.menuMobile {
-    animation-duration: 0.4s;
-    animation-delay: 0s;
-    animation-name: fadeInDown;
+.width-auto {
+    width: auto;
 }
 
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
+.opacity-all {
+    position: fixed;
+    height: 100%;
+    background-color: black;
+    z-index: 11;
+    opacity: .6;
+}
+
+.menuMobile,
+.menufix {
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: fadeInDown;
 }
 
 @keyframes fadeInDown {

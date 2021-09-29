@@ -7,6 +7,8 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
     <link href="./css/common.css" rel="stylesheet" type="text/css">
     <link href="./css/header.css" rel="stylesheet" type="text/css">
     <link href="./css/footer.css" rel="stylesheet" type="text/css">
@@ -55,8 +57,7 @@
         <div class="header-menu" id="headerDefault">
             <div class="header-menu-item container-all flex">
                 <div class="bars" id="bars">
-                    <span><i class="fas fa-bars"></i>
-                    </span>
+                    <i class="fas fa-bars"></i>
                 </div>
                 <div class="logo mg-auto">
                     <img src="images/logo.png" alt="">
@@ -91,7 +92,7 @@
                                     <img src="images/icon/cart.png" alt="">
                                 </a>
                             </div>
-                            <div class="count-product-cart mg-auto">
+                            <div class="count-product-cart">
                                 <a href="#">
                                     <span>0</span>
                                 </a>
@@ -110,7 +111,7 @@
                 <img src="images/logo.png" alt="" style="width: auto; height: auto">
             </div>
             <div class="close-btn" id="close">
-                <span><i class="fas fa-times"></i></span>
+                <i class="fas fa-times"></i>
             </div>
             <div class="menu-mobile">
                 <ul>
@@ -195,23 +196,6 @@
                     </div>
                 </div>
             </div>
-            <div class="dots flex">
-                <div class="dots-item dots-active">
-                    <div class="dots-style">
-
-                    </div>
-                </div>
-                <div class="dots-item">
-                    <div class="dots-style">
-
-                    </div>
-                </div>
-                <div class="dots-item">
-                    <div class="dots-style">
-
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- category -->
         <div class="category">
@@ -245,7 +229,7 @@
                     <div class="cate-content">
                         <div class="container-category">
                             <h5>SPRING 2021</h5>
-                            <h2>Top Wall Planters</h2>
+                            <h2>Top Wall <br/> Planters</h2>
                             <div class="button-shop-now">
                                 <a href="">Shop Now</a>
                             </div>
@@ -284,7 +268,7 @@
                             <div class="cate-content">
                                 <div class="container-category">
                                     <h5>SPRING 2021</h5>
-                                    <h2>Top Wall Planters</h2>
+                                    <h2>Top Wall <br> Planters</h2>
                                     <div class="button-shop-now">
                                         <a href="">Shop Now</a>
                                     </div>
@@ -555,24 +539,24 @@
         </div>
         <!-- branch -->
         <div class="branch">
-            <div class="container-item flex branch-img">
-                <div class="img mg-auto">
-                    <img src="images/branch/br-img1.png" alt="" style="width: auto; height: auto">
+            <div class="branch-img flex">
+                <div class="img">
+                    <img src="images/branch/br-img1.png" alt="">
                 </div>
-                <div class="img mg-auto">
-                    <img src="images/branch/br-img2.png" alt="" style="width: auto; height: auto">
+                <div class="img">
+                    <img src="images/branch/br-img2.png" alt="">
                 </div>
-                <div class="img mg-auto">
-                    <img src="images/branch/br-img3.png" alt="" style="width: auto; height: auto">
+                <div class="img">
+                    <img src="images/branch/br-img3.png" alt="">
                 </div>
-                <div class="img mg-auto">
-                    <img src="images/branch/br-img4.png" alt="" style="width: auto; height: auto">
+                <div class="img">
+                    <img src="images/branch/br-img4.png" alt="">
                 </div>
-                <div class="img mg-auto">
-                    <img src="images/branch/br-img5.png" alt="" style="width: auto; height: auto">
+                <div class="img">
+                    <img src="images/branch/br-img5.png" alt="">
                 </div>
-                <div class="img mg-auto">
-                    <img src="images/branch/br-img6.png" alt="" style="width: auto; height: auto">
+                <div class="img">
+                    <img src="images/branch/br-img6.png" alt="">
                 </div>
             </div>
         </div>
@@ -631,7 +615,7 @@
                         <div class="title">
                             <span>FOLLOW US</span>
                         </div>
-                        <div class="icon flex">
+                        <div class="icon flex" style="width: 60%;">
                             <div class="img flex-gr1">
                                 <img src="images/icon/fbfooter.png" alt="">
                             </div>
@@ -726,7 +710,10 @@
             </div>
         </div>
     </div>
-    <script src="js/app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

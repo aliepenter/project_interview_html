@@ -1,59 +1,138 @@
     /* res <768px screen */
     /* style banner */
     
-    .banner {
+    .banner,
+    .banner .item,
+    .category .left,
+    .category .imgLeft,
+    .category .imgRight,
+    .category .imgDownMobile,
+    .category .down,
+    .ads,
+    .testimonial,
+    .register,
+    .category .left {
         position: relative;
     }
     
-    .banner .item {
+    .banner .item,
+    .banner-content,
+    .banner .dots,
+    .category .cate-content,
+    .category .imgMobile,
+    .best-selling .product .product-item,
+    .ads img,
+    .ads .ads-content,
+    .shop-the-collections .stc-item .item,
+    .testimonial img.bg,
+    .testimonial-content,
+    .testimonial .dots,
+    .blog .blog-item .item,
+    .register .register-item,
+    .register .register-form input {
         width: 100%;
-        position: relative;
+    }
+    
+    .banner .item .banner-content,
+    .banner .dots,
+    .category .cate-content,
+    .ads .ads-content,
+    .testimonial-content,
+    .testimonial .dots,
+    .register .register-item {
+        position: absolute;
+    }
+    
+    .banner .item .banner-content h2,
+    .banner .item .banner-content button,
+    .best-selling .title,
+    .best-selling .product .product-info p,
+    .shop-the-collections .stc-item .item button,
+    .ads .ads-content h5,
+    .testimonial-content .title,
+    .testimonial-content .position p,
+    .blog .blog-item .item a,
+    .register .register-item p.child {
+        font-weight: bold;
+    }
+    
+    .banner .item .banner-content h2,
+    .category .cus-text-category a,
+    .ads .ads-content h2,
+    .blog .blog-item .item a {
+        color: black;
+    }
+    
+    .banner .item .banner-content h4 span,
+    .category .cus-text-category h5,
+    .blog .blog-item .item .infor p span {
+        color: #92AC28
+    }
+    
+    .banner .item .banner-content button,
+    .register .register-form .btn-submit button {
+        background-color: black;
+    }
+    
+    .banner .item .banner-content button,
+    .category .img h5,
+    .category .img a,
+    .category .img h2,
+    .ads .ads-content h5,
+    .blog .blog-item .item .infor span.blog-title,
+    .register .register-form .btn-submit button,
+    .ads .ads-content .sale {
+        color: white;
+    }
+    
+    .banner .item .banner-content button,
+    .register .register-form .btn-submit button,
+    .register .register-form input {
+        border: none;
+    }
+    
+    .ads .ads-content .sale,
+    .blog .blog-item .item .infor span.blog-title {
+        background: #92ac28;
     }
     
     .banner .item .banner-content {
-        position: absolute;
-        width: 100%;
         top: 50%;
         transform: translateY(-50%);
     }
     
+    .banner .item .banner-content h4 span,
+    .banner .item .banner-content h4 {
+        font-size: 8px;
+    }
+    
     .banner .item .banner-content h4 {
         display: block;
-        font-size: 8px;
         color: #444444
     }
     
     .banner .item .banner-content h2 {
         font-size: 12px;
-        color: black;
-        font-family: font_strong;
-        font-weight: 500;
         margin-top: 10px;
-    }
-    
-    .banner .item .banner-content h4 span {
-        font-size: 10px;
-        color: #92AC28
     }
     
     .banner .item .banner-content button {
         font-size: 6px;
         margin-top: 20px;
         padding: 5px;
-        font-weight: bold;
-        border: none;
-        color: white;
-        background: black
     }
     
     .banner .item .banner-content button:hover {
         background: #92AC28
     }
     
-    .banner .dots {
-        position: absolute;
-        width: 100%;
+    .banner .dots,
+    .testimonial .dots,
+    .register .register-form {
         justify-content: center;
+    }
+    
+    .banner .dots {
         bottom: 10px;
         z-index: 4;
     }
@@ -78,102 +157,93 @@
         margin: 0 40px
     }
     
-    .category {
+    .category,
+    .testimonial-content,
+    .branch-img,
+    .ig-img {
         height: 100%
     }
     
     .category .cus-text-category h5 {
         font-size: 9px;
-        color: #92ac28;
+    }
+    
+    .category .cus-text-category h2,
+    .category .cus-text-category a,
+    .category .img h2,
+    .category .img a {
+        font-weight: 700;
     }
     
     .category .cus-text-category h2 {
-        font-size: 20px;
-        font-weight: 700;
         margin: 10px 0;
         color: black !important;
     }
     
-    .category .cus-text-category a {
+    .category .cus-text-category a,
+    .category .img a,
+    .blog .blog-item .item a {
         text-decoration: none;
-        color: black;
-        font-weight: 700;
-        font-size: 10px;
+    }
+    
+    .category .cus-text-category a {
         padding-bottom: 5px;
         border-bottom: 2px solid black;
     }
     
-    .category .img h5 {
-        font-size: 10px;
-        color: white;
+    .category .img h5,
+    .category .cus-text-category h2,
+    .category .cus-text-category a,
+    .category .img a {
+        font-size: 15px;
     }
     
     .category .img h2 {
         font-size: 20px;
-        font-weight: 700;
         margin: 1.7rem 0;
-        color: white;
     }
     
     .category .img a {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-        font-size: 10px;
         padding-bottom: 5px;
         border-bottom: 2px solid white;
     }
     
-    .category .left {
-        position: relative;
-    }
-    
     .category .cate-content {
-        position: absolute;
         top: 15px;
-        width: 100%;
     }
     
     .category .right {
         display: none;
         height: 476px
     }
-    
-    .category .imgLeft {
-        position: relative;
-    }
-    
-    .category .imgRight {
-        position: relative;
-    }
-    
-    .category .imgDownMobile {
-        position: relative;
-    }
-    
-    .category .down {
-        position: relative;
-    }
-    
-    .category .imgMobile {
-        width: 100%;
-    }
     /* style best-selling */
     
-    .best-selling .title {
+    .best-selling .title,
+    .best-selling .product,
+    .ads .ads-content,
+    .shop-the-collections .title,
+    .shop-the-collections .stc-item .item,
+    .testimonial,
+    .blog .title,
+    .branch .img,
+    .register {
         text-align: center;
-        font-size: 32px;
-        font-weight: bold;
-        margin: 75px 0 45px 0;
     }
     
-    .best-selling .product {
-        text-align: center;
+    .best-selling .title,
+    .ads,
+    .shop-the-collections .title,
+    .blog .title,
+    .register .register-item h1 {
+        font-size: 32px;
+    }
+    
+    .best-selling .title {
+        margin: 75px 0 25px 0;
     }
     
     .best-selling .product .product-item {
-        width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         padding: 15px
     }
     
@@ -181,48 +251,60 @@
         margin-top: 30px;
     }
     
-    .best-selling .product .product-info span {
-        font-size: 14px;
-        color: #666666;
+    .best-selling .product .product-info span,
+    .best-selling .product .product-info p,
+    .best-selling .product .price span,
+    .testimonial-content .text {
         line-height: 2
     }
     
-    .best-selling .product .product-info p {
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 2
-    }
-    
+    .best-selling .product .product-info span,
     .best-selling .product .price span {
-        font-size: 16px;
         color: #666666;
-        line-height: 2
+    }
+    
+    .best-selling .product .product-info span,
+    .ads .ads-content h5,
+    .ads.testimonial-content .position p,
+    .testimonial-content .position span,
+    .blog .blog-item .item .infor span.blog-title,
+    .blog .blog-item .item .infor p {
+        font-size: 14px;
+    }
+    
+    .best-selling .product .product-info p,
+    .best-selling .product .price span,
+    .shop-the-collections .stc-item .item button,
+    .testimonial-content .text,
+    .blog .blog-item .item a,
+    .register .register-item p.child,
+    .register .register-form input {
+        font-size: 16px;
     }
     /* style ads */
     
-    .ads {
-        position: relative;
-    }
-    
     .ads img {
         height: 300px;
-        width: 100%;
         opacity: .4;
     }
     
     .ads .ads-content {
-        position: absolute;
         top: 35px;
-        text-align: center;
-        width: 100%;
+    }
+    
+    .ads .ads-content .sale,
+    .blog .blog-item .item .infor span.blog-title {
+        text-transform: uppercase;
+    }
+    
+    .ads .ads-content .sale,
+    .shop-the-collections .stc-item .item button,
+    .register .register-form .btn-submit button {
+        border-radius: 5px;
     }
     
     .ads .ads-content .sale {
-        color: #ffffff;
-        background: #92ac28;
-        text-transform: uppercase;
         padding: 6px 10px;
-        border-radius: 5px;
         display: inline-block;
         margin-bottom: 30px;
     }
@@ -231,49 +313,47 @@
         background: #c7ab62;
     }
     
-    .ads .ads-content h5 {
-        font-size: 14px;
-        font-weight: bold;
-        color: white;
+    .ads .ads-content h2,
+    .ads .ads-content p {
+        line-height: 1.2;
     }
     
     .ads .ads-content h2 {
         font-size: 40px;
         font-weight: lighter;
-        color: black;
-        line-height: 1.2;
+    }
+    
+    .ads .ads-content p,
+    .testimonial-content .title,
+    .register .register-item p {
+        font-size: 18px;
     }
     
     .ads .ads-content p {
-        font-size: 18px;
-        line-height: 1.2;
         margin-top: 25px;
     }
     /* style shop the collections */
     
     .shop-the-collections .title {
-        margin: 75px 0 45px 0;
-        text-align: center;
-        font-size: 32px;
+        margin: 75px 0 25px 0;
     }
     
     .shop-the-collections .stc-item .item {
-        width: 100%;
-        text-align: center;
         padding: 15px
     }
     
-    .shop-the-collections .stc-item .item .infor {
+    .shop-the-collections .stc-item .item .infor,
+    .blog .blog-item .item .infor h5 {
         font-size: 24px;
+    }
+    
+    .shop-the-collections .stc-item .item .infor {
         margin: 25px 0 15px 0;
     }
     
     .shop-the-collections .stc-item .item button {
         padding: 10.5px 30px;
-        font-size: 16px;
-        font-weight: bold;
         background-color: white;
-        border-radius: 5px;
     }
     
     .shop-the-collections .stc-item .item button:hover {
@@ -284,7 +364,6 @@
     /* style testimonial */
     
     .testimonial img.bg {
-        width: 100%;
         height: 500px
     }
     
@@ -295,49 +374,29 @@
     
     .testimonial {
         margin-top: 75px;
-        position: relative;
-        text-align: center;
     }
     
     .testimonial-content {
-        position: absolute;
         top: 10%;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .testimonial-content .title {
-        font-size: 18px;
-        font-weight: bold;
     }
     
     .testimonial-content .img {
         margin: 40px 0 30px 0 !important;
     }
     
-    .testimonial-content .text {
-        font-size: 16px;
+    .testimonial-content .text,
+    .testimonial-content .position span,
+    .blog .blog-item .item .infor h5 {
         font-weight: normal;
-        line-height: 2;
+    }
+    
+    .testimonial-content .text {
         margin-bottom: 30px
     }
     
-    .testimonial-content .position p {
-        font-size: 14px;
-        font-weight: bold;
-    }
-    
-    .testimonial-content .position span {
-        font-size: 14px;
-        font-weight: normal;
-    }
-    
     .testimonial .dots {
-        position: absolute;
-        width: 100%;
-        justify-content: center;
         z-index: 4;
-        bottom: 10px;
+        bottom: 35px;
     }
     
     .testimonial .dots .dots-item {
@@ -357,13 +416,10 @@
     /* style blog */
     
     .blog .title {
-        margin: 75px 0 25px 0;
-        text-align: center;
-        font-size: 32px;
+        margin: 55px 0 25px 0;
     }
     
     .blog .blog-item .item {
-        width: 100%;
         padding: 15px
     }
     
@@ -372,13 +428,14 @@
     }
     
     .blog .blog-item .item .infor span.blog-title {
-        background: #92ac28;
         border-radius: 3px;
         padding: 6px 16px 4px;
-        text-transform: uppercase;
         line-height: 1;
-        color: white;
-        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .blog .blog-item .item .infor span.blog-title:hover {
+        background: black;
     }
     
     .blog .blog-item .item .infor {
@@ -387,26 +444,15 @@
     
     .blog .blog-item .item .infor p {
         margin: 25px 0;
-        font-size: 14px;
-    }
-    
-    .blog .blog-item .item .infor p span {
-        color: #92ac28;
     }
     
     .blog .blog-item .item .infor h5 {
-        font-size: 24px;
-        font-weight: normal;
         margin-bottom: 25px;
     }
     
     .blog .blog-item .item a {
-        font-size: 16px;
-        font-weight: bold;
         padding-bottom: 7px;
         border-bottom: 2px solid black;
-        color: black;
-        text-decoration: none;
     }
     /* style branch */
     
@@ -422,20 +468,22 @@
     }
     
     .branch-img {
-        height: 100%;
         margin: auto;
-        width: 2000px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .branch-img .img img {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
     }
     
     .branch .img {
         width: 16.66667%;
-        text-align: center;
     }
     /* style ig-img */
-    
-    .ig-img {
-        height: 100%;
-    }
     
     .ig-img .img {
         width: 20%;
@@ -445,34 +493,19 @@
     .register {
         height: 380px;
         background-color: #f8f5ec;
-        position: relative;
-        text-align: center;
     }
     
     .register .register-item {
-        position: absolute;
-        width: 100%;
         top: 50%;
         transform: translateY(-50%);
     }
     
-    .register .register-item h1 {
-        font-size: 32px;
-    }
-    
     .register .register-item p {
         margin: 30px 0;
-        font-size: 18px;
     }
     
     .register .register-item p.child {
         margin: 20px 0;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    
-    .register .register-form {
-        justify-content: center;
     }
     
     .register .register-form .input {
@@ -483,48 +516,34 @@
     .register .register-form .btn-submit button {
         padding: 10px 20px;
         margin-left: 5px;
-        color: white;
-        background-color: black;
-        border: none;
-        border-radius: 5px;
     }
     
     .register .register-form input {
         background: #f8f5ec;
         padding: 10px 0;
-        width: 100%;
-        border: none;
         border-bottom: 1px solid black;
         outline: none;
-        font-size: 16px;
     }
     /* res 768px screen */
     
     @media screen and (min-width: 768px) {
         /* style banner */
+        .banner .item .banner-content h4,
+        .banner .item .banner-content h4 span,
+        .category .cus-text-category h5,
+        .category .img h5 {
+            font-size: 14px;
+        }
         .banner .item .banner-content h4 {
             display: block;
-            font-size: 14px;
-            color: #444444
         }
         .banner .item .banner-content h2 {
             font-size: 30px;
-            color: black;
-            font-family: font_strong;
-            font-weight: 500;
-            margin-top: 10px;
-        }
-        .banner .item .banner-content h4 span {
-            font-size: 14px;
-            color: #92AC28
         }
         .banner .item .banner-content button {
             font-size: 8px;
             margin-top: 30px;
             padding: 10px;
-            font-weight: bold;
-            border: none;
-            color: white;
             background: black
         }
         .banner .item .banner-content button:hover {
@@ -532,58 +551,43 @@
         }
         /* style category */
         .category .cus-text-category h5 {
-            font-size: 14px;
-            color: #92ac28;
+            color: #92AC28 !important;
         }
         .category .cus-text-category h2 {
-            font-size: 40px !important;
-            font-weight: 700;
+            font-size: 40px;
             margin: 1.7rem 0;
         }
         .category .cus-text-category a {
-            text-decoration: none;
             color: black;
-            font-weight: 700;
             font-size: 16px;
             padding-bottom: 5px;
             border-bottom: 2px solid black;
         }
-        .category .img h5 {
-            font-size: 14px;
-        }
         .category .img h2 {
-            font-size: 20px;
-            font-weight: 700;
             margin: 1.7rem 0;
         }
         .category .img a {
             font-size: 16px;
         }
-        .category .left {
-            position: relative;
-            width: 100%;
-        }
         .category .cate-content {
             position: absolute;
             top: 75px;
-            width: 100%;
         }
         .category .right {
             display: flex;
-            width: 100%;
             height: 100%;
         }
-        .category .right .up {
+        .category .right .up,
+        .category .down,
+        .category .right,
+        .category .left,
+        .category .cate-content {
             width: 100%;
         }
-        .category .imgLeft {
+        .category .imgLeft,
+        .category .imgRight,
+        .best-selling .product .product-item {
             width: 50%;
-        }
-        .category .imgRight {
-            width: 50%;
-        }
-        .category .down {
-            width: 100%;
         }
         .category .imgMobile {
             display: none;
@@ -593,8 +597,6 @@
         }
         /* style best-selling */
         .best-selling .product .product-item {
-            width: 50%;
-            margin-bottom: 35px;
             padding: 15px
         }
         /* style shop the collections */
@@ -608,23 +610,23 @@
         .blog .blog-item .item .infor {
             height: 200px
         }
+        /* style testimonial */
+        .testimonial .dots {
+            bottom: 100px;
+        }
     }
     
     @media screen and (min-width: 1024px) {
         /* style banner */
-        .banner .item .banner-content h4 {
+        .banner .item .banner-content h4,
+        .banner .item .banner-content h4 span {
             font-size: 20px;
         }
         .banner .item .banner-content h2 {
             font-size: 40px;
-            margin-top: 10px;
-        }
-        .banner .item .banner-content h4 span {
-            font-size: 20px;
         }
         .banner .item .banner-content button {
             font-size: 14px;
-            margin-top: 30px;
             padding: 11px 38px;
         }
         /* style category */
@@ -641,18 +643,17 @@
             top: 25px;
         }
         .category .cus-text-category h2 {
-            font-size: 30px !important;
+            font-size: 30px;
         }
         .category .img h2 {
             font-size: 15px;
-            font-weight: 700;
             margin: 1.7rem 0;
         }
-        .category .left {
+        .category .left,
+        .category .right {
             width: 50%;
         }
         .category .right {
-            width: 50%;
             height: auto
         }
         /* style ads */
@@ -678,28 +679,16 @@
     
     @media screen and (min-width: 1440px) {
         /* style banner */
-        .banner .item .banner-content h4 {
+        .banner .item .banner-content h4,
+        .banner .item .banner-content h4 span {
             font-size: 24px;
-            color: #444444
         }
         .banner .item .banner-content h2 {
             font-size: 60px;
-            color: black;
-            font-family: font_strong;
-            font-weight: 500;
-            margin-top: 10px;
-        }
-        .banner .item .banner-content h4 span {
-            font-size: 24px;
-            color: #92AC28
         }
         .banner .item .banner-content button {
             font-size: 18px;
-            margin-top: 30px;
             padding: 11px 38px;
-            font-weight: bold;
-            border: none;
-            color: white;
             background: black
         }
         .banner .item .banner-content button:hover {
@@ -708,7 +697,6 @@
         /* style best-selling */
         .best-selling .product .product-item {
             width: 25%;
-            margin-bottom: 35px;
             padding: 15px
         }
         /* style ads */
@@ -722,24 +710,23 @@
             opacity: 1;
         }
         /* style testimonial */
-        .testimonial img.bg {
+        .testimonial img.bg,
+        .testimonial-content,
+        .branch-img {
             width: 100%;
+        }
+        .testimonial img.bg {
             height: 500px;
         }
         .container-testimonial {
             width: 50%;
-            margin: 0 auto;
         }
         .testimonial {
             margin-top: 75px;
-            position: relative;
-            text-align: center;
         }
         .testimonial-content {
             position: absolute;
             top: 10%;
-            width: 100%;
-            height: 100%;
         }
         .testimonial-content .title {
             font-size: 32px;
@@ -753,15 +740,17 @@
         .testimonial-content .position span {
             font-size: 16px;
         }
+        .testimonial .dots {
+            bottom: 50px;
+        }
         /* style blog */
         .blog .blog-item .item .infor {
             height: 200px
         }
         /* branch */
-        .branch-img {
+        .branch-img,
+        .testimonial-content {
             height: 100%;
-            margin: auto;
-            width: 100%;
         }
         /* style mobile menu */
         .opacity-all {
@@ -779,17 +768,14 @@
         }
         .category .cus-text-category h5 {
             font-size: 14px !important;
-            color: #92ac28;
+            color: #92AC28
         }
         .category .cus-text-category h2 {
-            font-size: 40px !important;
-            font-weight: 700;
+            font-size: 40px;
             margin: 1.7rem 0
         }
         .category .cus-text-category a {
-            text-decoration: none;
             color: black;
-            font-weight: 700;
             font-size: 16px !important;
             padding-bottom: 5px;
             border-bottom: 2px solid black;
@@ -811,7 +797,7 @@
             height: 476px;
         }
         .container-category {
-            margin: 0 70px
+            margin: 0 60px
         }
         /* style ads */
         .ads .ads-content {
@@ -823,19 +809,19 @@
         /* style testimonial */
         .container-testimonial {
             width: 50%;
-            margin: 0 auto;
         }
         /* style testimonial */
         .testimonial-content {
             position: absolute;
-            top: 20%;
+            top: 10%;
             width: 100%;
-            height: 100%;
         }
         /* branch */
-        .branch-img {
+        .branch-img,
+        .testimonial-content {
             height: 100%;
-            margin: auto;
+        }
+        .branch-img {
             width: 73%;
         }
     }
