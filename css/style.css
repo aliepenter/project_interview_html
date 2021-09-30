@@ -60,7 +60,8 @@
     .banner .item .banner-content h2,
     .category .cus-text-category a,
     .ads3 .ads3-content h2,
-    .blog .blog-item .item a {
+    .blog .blog-item .item a,
+    .best-selling a {
         color: black;
     }
     
@@ -189,7 +190,7 @@
         text-decoration: none;
     }
     
-    .category .cus-text-category a {
+    .category .cus-text-category .button-shop-now a {
         padding-bottom: 5px;
         border-bottom: 2px solid black;
     }
@@ -239,7 +240,7 @@
     .shop-the-collections .title,
     .blog .title,
     .register .register-item h1 {
-        font-size: 32px;
+        font-size: 27px;
     }
     
     .best-selling .title {
@@ -342,7 +343,6 @@
     
     .shop-the-collections .title {
         margin: 78px 0 25px 0;
-        letter-spacing: -4px;
     }
     
     .shop-the-collections .stc-item .item {
@@ -423,15 +423,11 @@
     /* style blog */
     
     .blog .title {
-        margin: 60px 0 25px 0;
-    }
-    
-    .blog .title h3 {
-        letter-spacing: -4px;
+        margin: 70px 0 25px 0;
     }
     
     .blog .blog-item .item {
-        padding: 15px
+        padding: 20px 15px
     }
     
     .blog .blog-item .item img {
@@ -450,7 +446,7 @@
     }
     
     .blog .blog-item .item .infor {
-        height: 250px
+        height: 187px
     }
     
     .blog .blog-item .item .infor p {
@@ -461,16 +457,16 @@
         margin-bottom: 25px;
     }
     
-    .blog .blog-item .item a {
+    .blog .blog-item .item .read-more a {
         padding-bottom: 7px;
         border-bottom: 2px solid black;
     }
     /* style branch */
     
     .branch {
+        margin-top: 35px;
         height: 225px;
         background-color: #f8f5ec;
-        margin-top: 75px;
         overflow-x: scroll;
     }
     
@@ -565,14 +561,12 @@
             color: #92AC28 !important;
         }
         .category .cus-text-category h2 {
-            font-size: 40px;
+            font-size: 40px !important;
             margin: 1.7rem 0;
         }
         .category .cus-text-category a {
             color: black;
             font-size: 16px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid black;
         }
         .category .img h2 {
             margin: 1.7rem 0;
@@ -619,7 +613,7 @@
         }
         /* style blog */
         .blog .blog-item .item .infor {
-            height: 200px
+            height: 166px
         }
         /* style testimonial */
         .testimonial .dots {
@@ -648,7 +642,7 @@
             padding: 10px
         }
         .container-category {
-            margin: 0 30px
+            margin: 0 40px
         }
         .category .cate-content {
             top: 25px;
@@ -657,7 +651,7 @@
             font-size: 30px;
         }
         .category .img h2 {
-            font-size: 15px;
+            font-size: 18px;
             margin: 1.7rem 0;
         }
         .category .left,
@@ -676,7 +670,6 @@
         /* style blog */
         .blog .blog-item .item {
             width: 33.333334%;
-            padding: 15px
         }
         .blog .blog-item .item .infor {
             height: 250px
@@ -689,6 +682,10 @@
     }
     
     @media screen and (min-width: 1440px) {
+        .category .img h2 {
+            font-size: 24px;
+            margin: 1.7rem 0;
+        }
         /* style banner */
         .banner .item .banner-content h4,
         .banner .item .banner-content h4 span {
@@ -761,6 +758,9 @@
             height: 200px
         }
         /* branch */
+        .branch {
+            margin-top: 63px;
+        }
         .branch-img,
         .testimonial-content {
             height: 100%;
@@ -785,7 +785,7 @@
             height: 748px;
         }
         .best-selling {
-            margin-bottom: 33px;
+            margin-bottom: 45px;
         }
         /* style category */
         .category .right .img {
@@ -803,8 +803,6 @@
         .category .cus-text-category a {
             color: black;
             font-size: 16px !important;
-            padding-bottom: 5px;
-            border-bottom: 2px solid black;
         }
         .category .img h5 {
             font-size: 14px;

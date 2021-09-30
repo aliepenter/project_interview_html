@@ -37,8 +37,14 @@ button {
 }
 
 .cus-category,
-.container-item {
+.container-item,
+.container-banner,
+.container-blog {
     margin: 0 auto;
+}
+
+.container-banner {
+    width: 73%;
 }
 
 .cus-category {
@@ -54,8 +60,9 @@ button {
     margin: 0 2.3% 0 3.3%;
 }
 
+.container-blog,
 .container-item {
-    width: 73%;
+    width: 100%;
 }
 
 .mg-auto {
@@ -112,8 +119,12 @@ ul li {
     display: inline-block;
 }
 
-ul li a {
+a {
     text-decoration: none;
+}
+
+.header a,
+ul li a {
     color: black;
 }
 
@@ -153,6 +164,22 @@ ul .active a {
     animation-duration: 0.5s;
     animation-delay: 0s;
     animation-name: fadeInDown;
+}
+
+@media screen and (min-width: 768px) {
+    .container-blog {
+        width: 73%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-blog,
+    .container-item {
+        width: 73%;
+    }
+    .slick-dots {
+        bottom: 25px
+    }
 }
 
 @keyframes fadeInDown {

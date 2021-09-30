@@ -106,7 +106,7 @@
 }
 
 .header-menu .count-product-cart span {
-    font-size: 18px;
+    font-size: 15px;
     color: white
 }
 
@@ -127,6 +127,7 @@
 
 .language {
     padding-right: 18px;
+    cursor: pointer;
 }
 
 
